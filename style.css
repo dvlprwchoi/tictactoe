@@ -68,7 +68,7 @@
   padding: 1rem;
 }
 
-.dark {
+.darkmodeButton.dark p {
   color: black;
   /* background-color: rgb(238, 210, 159); */
   background-color: rgb(252, 243, 229);
@@ -83,7 +83,7 @@
   background-color: rgb(252, 243, 229);
 }
 
-.light {
+.darkmodeButton.light p {
   color: rgb(252, 243, 229);
   background-color: rgb(56, 1, 56);
 }
@@ -128,13 +128,20 @@
     justify-content: center;
     /* margin-left: 1rem; */
   }
+
   .game {
     order: 0;
   }
+
   .resetButton {
     order: 1;
   }
+
   .darkmodeButton {
     order: -1;
+  }
+
+  .lightTheme {
+    background-color: orange;
   }
 }

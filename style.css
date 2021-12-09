@@ -4,10 +4,18 @@
   padding: 1%;
 } */
 
+/* html { */
+/* display: flex; */
+/* justify-content: center; */
+/* align-items: center; */
+/* } */
+
 .container {
   /* background-color: black;
   color: white; */
   display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
   flex-direction: column;
 }
 
@@ -15,20 +23,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: calc(10px + 2vmin);
 }
 
 .gameBoard {
   display: grid;
   grid-template-columns: auto auto auto;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .gameGrid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: cadetblue;
+  opacity: 0.8;
   border: 5px solid black;
   text-align: center;
+  /* width: 13vw; */
+  height: 15vmin;
   padding: calc(5px + 4vmin);
   font-size: calc(10px + 2vmin);
+  cursor: pointer;
 }
 
 .footer {
@@ -39,4 +55,15 @@
 .markX,
 .markO {
   background-color: brown;
+  color: rgb(252, 243, 229);
+  font-size: calc(20px + 5vmin);
+}
+
+@media (min-width: 550px) {
+  html {
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 }

@@ -36,8 +36,8 @@ const resetFunction = () => {
   }
 };
 
-const reset = document.querySelector('.reset');
-reset.addEventListener('click', resetFunction);
+const resetButton = document.querySelector('.resetButton');
+resetButton.addEventListener('click', resetFunction);
 
 for (const grid of allGameGrids) {
   grid.addEventListener('click', mark);

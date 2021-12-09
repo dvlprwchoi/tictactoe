@@ -47,7 +47,8 @@
   cursor: pointer;
 }
 
-.reset {
+.resetButton,
+.darkmodeButton {
   /* display: flex;
   justify-content: center;
   align-items: center; */
@@ -55,12 +56,20 @@
   text-align: center;
 }
 
-.reset p {
+.resetButton p {
   color: rgb(252, 243, 229);
   background-color: red;
   opacity: 0.8;
   padding: 1rem;
 }
+
+.darkmodeButton p {
+  color: rgb(252, 243, 229);
+  background-color: rgb(56, 1, 56);
+  opacity: 0.8;
+  padding: 1rem;
+}
+
 .footer {
   font-size: calc(10px + 2vmin);
   text-align: center;
@@ -83,16 +92,27 @@
 
   .game {
     display: grid;
-    grid-template-columns: 20fr 1fr;
+    grid-template-columns: 1fr 20fr 1fr;
   }
 
   .gameBoard {
-    margin-left: 6rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
-  .reset {
+  .resetButton,
+  .darkmodeButton {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
+  }
+  .game {
+    order: 0;
+  }
+  .resetButton {
+    order: 1;
+  }
+  .darkmodeButton {
+    order: -1;
   }
 }

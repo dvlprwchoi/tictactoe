@@ -11,6 +11,9 @@ const grid33 = document.querySelector('.grid33');
 const allGameGrids = document.querySelectorAll('.gameGrid');
 // console.log(allGameGrids[0].classList[1]);
 
+const title = document.querySelector('.title');
+// console.log(title);
+
 let isXTurn = true;
 let isGameOver = false;
 
@@ -65,7 +68,10 @@ const winningLogic = () => {
     } else if (winner === 'X') {
       loser = 'O';
     }
-    console.log(winner + ' won and ' + loser + ' lost!');
+    let statusMessage = winner + ' won and ' + loser + ' lost!';
+    // console.log(statusMessage);
+    // title.innerHTML = '<h1>' + statusMessage + '</h1>';
+    title.innerHTML = `<h1>${statusMessage}</h1>`;
   };
 
   if (grid11Mark && grid11Mark === grid12Mark && grid11Mark === grid13Mark) {
@@ -148,7 +154,9 @@ const winningLogic = () => {
     grid33Mark
   ) {
     isGameOver = true;
-    console.log('Tied!');
+    let statusMessage = 'Tied!';
+    // console.log(statusMessage);
+    title.innerHTML = `<h1>${statusMessage}</h1>`;
   }
 };
 

@@ -35,3 +35,8 @@
   font-size: calc(10px + 2vmin);
   text-align: center;
 }
+
+.markX,
+.markO {
+  background-color: brown;
+}

@@ -8,4 +8,23 @@ const grid31 = document.querySelector('.grid31');
 const grid32 = document.querySelector('.grid32');
 const grid33 = document.querySelector('.grid33');
 
-console.log(grid11);
+const allGameGrids = document.querySelectorAll('.gameGrid');
+// console.log(allGameGrids[0].classList[1]);
+
+let isXTurn = true;
+
+const mark = (e) => {
+  if (isXTurn) {
+    e.target.classList.add('markX');
+    e.target.innerHTML = 'X';
+    isXTurn = !isXTurn;
+  } else {
+    e.target.classList.add('markO');
+    e.target.innerHTML = 'O';
+    isXTurn = !isXTurn;
+  }
+};
+
+for (const grid of allGameGrids) {
+  grid.addEventListener('click', mark);
+}

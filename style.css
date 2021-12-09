@@ -127,6 +127,9 @@
 .win {
   background-color: olivedrab;
   transition: background-color 1500ms ease-in-out;
+  -webkit-transition: 1500ms ease-in-out;
+  -o-transition: 1500ms ease-in-out;
+  -moz-transition: 1500ms ease-in-out;
   color: rgb(39, 2, 73);
 }
 

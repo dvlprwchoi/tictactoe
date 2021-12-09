@@ -4,6 +4,10 @@
   padding: 1%;
 } */
 
+* {
+  font-family: 'Exo', sans-serif;
+}
+
 /* html { */
 /* display: flex; */
 /* justify-content: center; */

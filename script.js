@@ -170,6 +170,7 @@ const resetFunction = () => {
     grid.classList.remove('O');
     grid.classList.remove('win');
     grid.innerHTML = '';
+    title.innerHTML = `<h1>Tic Tac Toe</h1>`;
     isXTurn = true;
     isGameOver = false;
   }

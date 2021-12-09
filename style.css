@@ -1,4 +1,37 @@
-body {
-  background-color: black;
-  color: white;
+/* * {
+  border: 1px solid red;
+  margin: 1%;
+  padding: 1%;
+} */
+
+.container {
+  /* background-color: black;
+  color: white; */
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gameBoard {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  border: 1px solid black;
+}
+
+.gameGrid {
+  background-color: cadetblue;
+  border: 5px solid black;
+  text-align: center;
+  padding: calc(5px + 4vmin);
+  font-size: calc(10px + 2vmin);
+}
+
+.footer {
+  font-size: calc(10px + 2vmin);
+  text-align: center;
 }

@@ -64,15 +64,37 @@
 }
 
 .darkmodeButton p {
-  color: rgb(252, 243, 229);
-  background-color: rgb(56, 1, 56);
   opacity: 0.8;
   padding: 1rem;
+}
+
+.dark {
+  color: black;
+  /* background-color: rgb(238, 210, 159); */
+  background-color: rgb(252, 243, 229);
+}
+
+.darkTheme {
+  color: rgb(252, 243, 229);
+  background-color: black;
+}
+
+.lightTheme {
+  background-color: rgb(252, 243, 229);
+}
+
+.light {
+  color: rgb(252, 243, 229);
+  background-color: rgb(56, 1, 56);
 }
 
 .footer {
   font-size: calc(10px + 2vmin);
   text-align: center;
+}
+
+.footer a {
+  color: rgb(128, 53, 53);
 }
 
 .markX,

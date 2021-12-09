@@ -27,6 +27,10 @@ const mark = (e) => {
   }
 };
 
+for (const grid of allGameGrids) {
+  grid.addEventListener('click', mark);
+}
+
 const resetFunction = () => {
   for (const grid of allGameGrids) {
     grid.classList.remove('markX');
@@ -39,6 +43,27 @@ const resetFunction = () => {
 const resetButton = document.querySelector('.resetButton');
 resetButton.addEventListener('click', resetFunction);
 
-for (const grid of allGameGrids) {
-  grid.addEventListener('click', mark);
-}
+let isDarkMode = false;
+
+const darkmodeFunction = () => {
+  if (!isDarkMode) {
+    darkmodeButton.innerHTML = '<p>Light Mode</p>';
+    darkmodeButton.classList.add('dark');
+    background.classList.add('darkTheme');
+    background.classList.remove('lightTheme');
+    darkmodeButton.classList.remove('light');
+    isDarkMode = !isDarkMode;
+  } else {
+    darkmodeButton.innerHTML = '<p>Dark Mode</p>';
+    darkmodeButton.classList.add('light');
+    background.classList.add('lightTheme');
+    background.classList.remove('darkTheme');
+    darkmodeButton.classList.remove('dark');
+    isDarkMode = !isDarkMode;
+  }
+};
+
+const background = document.querySelector('html');
+
+const darkmodeButton = document.querySelector('.darkmodeButton');
+darkmodeButton.addEventListener('click', darkmodeFunction);

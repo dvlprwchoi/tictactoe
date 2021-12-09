@@ -47,6 +47,20 @@
   cursor: pointer;
 }
 
+.reset {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  font-size: calc(10px + 2vmin);
+  text-align: center;
+}
+
+.reset p {
+  color: rgb(252, 243, 229);
+  background-color: red;
+  opacity: 0.8;
+  padding: 1rem;
+}
 .footer {
   font-size: calc(10px + 2vmin);
   text-align: center;
@@ -65,5 +79,20 @@
     display: flex;
     justify-content: center;
     width: 100%;
+  }
+
+  .game {
+    display: grid;
+    grid-template-columns: 20fr 1fr;
+  }
+
+  .gameBoard {
+    margin-left: 6rem;
+  }
+  .reset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
   }
 }

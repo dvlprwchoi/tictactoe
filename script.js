@@ -27,6 +27,18 @@ const mark = (e) => {
   }
 };
 
+const resetFunction = () => {
+  for (const grid of allGameGrids) {
+    grid.classList.remove('markX');
+    grid.classList.remove('markO');
+    grid.innerHTML = '';
+    isXTurn = true;
+  }
+};
+
+const reset = document.querySelector('.reset');
+reset.addEventListener('click', resetFunction);
+
 for (const grid of allGameGrids) {
   grid.addEventListener('click', mark);
 }

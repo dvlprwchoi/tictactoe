@@ -14,7 +14,9 @@ const allGameGrids = document.querySelectorAll('.gameGrid');
 let isXTurn = true;
 
 const mark = (e) => {
-  if (isXTurn) {
+  if (e.target.classList[2] === 'markX' || e.target.classList[2] === 'markO') {
+    return;
+  } else if (isXTurn) {
     e.target.classList.add('markX');
     e.target.innerHTML = 'X';
     isXTurn = !isXTurn;

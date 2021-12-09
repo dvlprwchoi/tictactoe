@@ -136,6 +136,19 @@ const winningLogic = () => {
     allGameGrids[7].classList.add('win');
     allGameGrids[8].classList.add('win');
     winningFunction(grid31Mark);
+  } else if (
+    grid11Mark &&
+    grid12Mark &&
+    grid13Mark &&
+    grid21Mark &&
+    grid22Mark &&
+    grid23Mark &&
+    grid31Mark &&
+    grid32Mark &&
+    grid33Mark
+  ) {
+    isGameOver = true;
+    console.log('Tied!');
   }
 };
 

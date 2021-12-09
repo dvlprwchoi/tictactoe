@@ -113,8 +113,8 @@
   text-decoration: underline;
 }
 
-.markX,
-.markO {
+.X,
+.O {
   background-color: brown;
   color: rgb(252, 243, 229);
   font-size: calc(20px + 5vmin);

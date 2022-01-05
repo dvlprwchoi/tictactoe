@@ -5,7 +5,7 @@ Tic Tac Toe game is built with Vanila JavaScript. This application has a mobile 
 # Preview
 
 <p align = 'center'>
-<img align = 'center' src='https://raw.githubusercontent.com/dvlprwchoi/tictactoe/main/src/img/tictactoe-screenshot-20211209.png' width='50%' alt='Tic Tac Toe screenshot' />
+<img align = 'center' src='https://raw.githubusercontent.com/dvlprwchoi/tictactoe/main/src/img/tictactoe-screenshot-20211209.png' width='90%' alt='Tic Tac Toe screenshot' />
 </p>
 
 # Technologies used
